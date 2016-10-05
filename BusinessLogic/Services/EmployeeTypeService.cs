@@ -11,7 +11,7 @@ namespace BusinessLogic.Services
 {
     public class EmployeeTypeService : IEmployeeTypeService
     {
-        private IRepository<EmployeeType> _employeeTypeRepository;
+        private readonly IRepository<EmployeeType> _employeeTypeRepository;
         public EmployeeTypeService(IRepository<EmployeeType> employeeTypeRepository)
         {
             _employeeTypeRepository = employeeTypeRepository;

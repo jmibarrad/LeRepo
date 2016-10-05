@@ -15,7 +15,8 @@ namespace DAL
         public DbSet<EmployeeType> EmployeeTypes { get; set; }
         public ShopContext():base("ShopContext")
         {
-            
+            Database.SetInitializer(new ShopDbInitializer());
+
         }
     }
 }
