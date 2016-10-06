@@ -1,0 +1,31 @@
+﻿@model IEnumerable<DAL.Entities.EmployeeType>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>title</title>
+</head>
+<body>
+<div>
+      @foreach (var et in Model)
+      {
+          <tr>
+              <td>
+                  @Html.DisplayFor(x => et.Id)
+              </td>
+              <td>
+                  @Html.DisplayFor(x => et.Name)
+              </td>
+              <td>
+                  @Html.DisplayFor(x => et.Salary)
+              </td>
+          </tr>
+      }
+</div>
+</body>
+</html>

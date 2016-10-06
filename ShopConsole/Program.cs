@@ -29,10 +29,11 @@ namespace ShopConsole
                 var list = writer.ListEmployeeTypes();
                 foreach (var l in list)
                 {
-                    Console.WriteLine(l.Name, l.Id, l.Salary);
+                    Console.WriteLine($"Id: {l.Id} Name: {l.Name} Salary: {l.Salary}");
                 }
             }
 
+            Console.ReadKey();
 
         }
     }
